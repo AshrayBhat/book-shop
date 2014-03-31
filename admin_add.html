@@ -1,0 +1,50 @@
+<html> 
+<head> 
+<meta name="description" content="Php Code for View, Search, Edit and Delete 
+Record" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<title>Add Product</title> 
+</head> 
+<body> 
+<center> 
+ <h1><u>Book Store</u></h1> 
+</center> 
+<form name="add" method="post" action="admin_add.php"> 
+ <table style=" border:1px solid silver" cellpadding="5px" cellspacing="0px" 
+align="center" border="0"> 
+ <tr> 
+ <td colspan="4" style="background:#0066FF; color:#FFFFFF; fontsize:20px">ADD PRODUCT DETAILS</td> 
+ </tr> 
+ <tr> 
+ <tr> 
+ <td>ISBN-No</td> 
+ <td><input type="text" name="ISBN-No" size="20"></td> 
+ <tr> 
+ <td>Book Name</td> 
+ <td><input type="text" name="BookName" size="20"></td> 
+ <tr>
+ <td>AuthorName</td> 
+ <td><input type="text" name="BookAuthor" size="20"></td> 
+ </tr>
+ <td>Publisher</td> 
+ <td><input type="text" name="Publisher" size="20"></td> 
+ </tr> 
+ <tr> 
+ <td>Price</td> 
+ <td><input type="text" name="Price" size="20"> </td> 
+  </tr>
+ <tr> 
+ <td>NumOfCopies</td> 
+ <td><input type="text" name="NumOfCopies" size="20"> </td> 
+  </tr>
+ <td colspan="4" align="center"><input type="hidden" name="do" value="store"> 
+ 
+ <input type="submit" value="ADD PRODUCT"></td> 
+ </tr> 
+ </table> 
+</form> 
+<p align="center"><a href="admin_arena.html">Go Back to Home</a></p> 
+<? 
+include("search.php");?> 
+</body> 
+</html>
